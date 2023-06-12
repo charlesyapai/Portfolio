@@ -7,7 +7,7 @@ components.html(
     <style>
         .multicolor {
             font-family: Arial, sans-serif;
-            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            background-image: url('path/to/your/image.jpg');
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -38,4 +38,3 @@ components.html(
 
 
 
-#streamlit run "/Users/charles/Desktop/GitHub/Portfolio/code.py"
