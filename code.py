@@ -7,7 +7,7 @@ components.html(
     <style>
         .multicolor {
             font-family: Arial, sans-serif;
-            background-image: url('path/to/your/image.jpg');
+            background-image: url('https://graduate.northeastern.edu/resources/wp-content/uploads/sites/4/2020/06/iStock-1221293664-1.jpg');
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
