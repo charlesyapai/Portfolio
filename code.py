@@ -23,18 +23,51 @@ components.html(
             font-family: cursive;
             color: red;
         }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .section h2 {
+            margin-bottom: 30px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
     </style>
-    <h1> My Portfolio </h1>
-    <div> I am a junior data scientist specializing in Python and Machine Learning.</div>
+    <h1> Charles "Prof" Yap </h1>
+    <h2> Aspiring Data Scientist </h2>
     <hr />
-    <div> Project 1 - <a href="https://github.com/GryphonHolder/Project_1" target="_blank">GitHub Link</a> </div>
-    <div> Project 2 - <a href="https://github.com/GryphonHolder/GAProj2" target="_blank">GitHub Link</a> </div>
-    <div class="multicolor">Multicolor Text</div>
-    <div class="big-blue">Big and Blue Text</div>
-    <div class="cursive-red">Cursive and Red Text</div>
-    """,
+
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am a junior data scientist specializing in Python and Machine Learning. I have an interest in utilizing Machine learning to generate business insights.</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Description of Project 1.</p>
+            <a href="https://github.com/GryphonHolder/Project_1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Description of Project 2.</p>
+            <a href="https://github.com/GryphonHolder/GAProj2" target="_blank">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Showcase</h2>
+        <p>Here you can showcase your work and graphs. You can use JavaScript to make this section interactive.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contact</h2>
+        <p>If you would like to get in touch, please contact me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    </div>
+
     height=600,
 )
-
-
-
