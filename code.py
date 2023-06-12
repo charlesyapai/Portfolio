@@ -5,27 +5,21 @@ import streamlit.components.v1 as components
 components.html(
     """
     <style>
-        .multicolor {
+        body {
+            background-color: #f4f4f4;
             font-family: Arial, sans-serif;
-            background-image: url('https://graduate.northeastern.edu/resources/wp-content/uploads/sites/4/2020/06/iStock-1221293664-1.jpg');
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
         }
 
-        .big-blue {
-            font-family: Arial, sans-serif;
-            font-size: 24px;
-            color: blue;
-        }
-
-        .cursive-red {
-            font-family: cursive;
-            color: red;
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: #333;
+            color: white;
         }
 
         .section {
             padding: 50px 0;
+            text-align: center;
         }
 
         .section h2 {
@@ -35,10 +29,22 @@ components.html(
         .project {
             margin-bottom: 20px;
         }
+
+        .strengths, .weaknesses {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .strengths div, .weaknesses div {
+            width: 30%;
+        }
     </style>
-    <h1> Charles "Prof" Yap </h1>
-    <h2> Aspiring Data Scientist </h2>
-    <hr />
+    <div class="header">
+        <h1> Charles "Prof" Yap </h1>
+        <h2> Aspiring Data Scientist </h2>
+        <img src="https://your-image-url.com" alt="Your image" width="200">
+    </div>
 
     <div class="section">
         <h2>About Me</h2>
@@ -60,16 +66,45 @@ components.html(
     </div>
 
     <div class="section">
-        <h2>Showcase</h2>
-        <p>Here you can showcase your work and graphs. You can use JavaScript to make this section interactive.</p>
+        <h2>Strengths</h2>
+        <div class="strengths">
+            <div>
+                <h3>Strength 1</h3>
+                <p>Description of Strength 1.</p>
+            </div>
+            <div>
+                <h3>Strength 2</h3>
+                <p>Description of Strength 2.</p>
+            </div>
+            <div>
+                <h3>Strength 3</h3>
+                <p>Description of Strength 3.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Weaknesses</h2>
+        <div class="weaknesses">
+            <div>
+                <h3>Weakness 1</h3>
+                <p>Description of Weakness 1.</p>
+            </div>
+            <div>
+                <h3>Weakness 2</h3>
+                <p>Description of Weakness 2.</p>
+            </div>
+            <div>
+                <h3>Weakness 3</h3>
+                <p>Description of Weakness 3.</p>
+            </div>
+        </div>
     </div>
 
     <div class="section">
         <h2>Contact</h2>
         <p>If you would like to get in touch, please contact me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
     </div>
-
-    
     """,
     height=600,
 )
